@@ -10,7 +10,7 @@ function BannerSection() {
         We are getting married
       </h6>
       <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-8">
-        Jadon & Programming
+        Jadon & Programmingg
       </h1>
       <img
         src="https://i.pinimg.com/736x/f4/d5/c3/f4d5c32e11446ccce158f83acbe4e4f7.jpg"
