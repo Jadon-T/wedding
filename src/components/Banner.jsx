@@ -1,12 +1,13 @@
 import { useRef, useState } from "react";
+import {Pause, Play} from "lucide-react";
 
 function BannerSection() {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const toggleMusic = () => {
-    if (audioRef.current) {
-      audioRef.current = new Audio("/music/wedding.mp3");
+    if (!audioRef.current) {
+      audioRef.current = new Audio("/love-romantic-hopeful-music-333017.mp3");
     }
 
       if (isPlaying) {
@@ -40,10 +41,10 @@ function BannerSection() {
         </h1>
 
         <button
-          className="rounded-full p-3 bg-white/80 hover:bg-white text-black transition-colors"
+          className="w-16 h-16 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_rgba(31,38,135,0.37)] hover:scale-105 transition-all duration-300 ease-in-out text-white text-2xl"
           onClick={toggleMusic}
           >
-          {isPlaying ? "⏸️" : "▶️"}
+          {isPlaying ? <Pause size={28} /> : <Play size={28} />}
         </button>
       </div>
     </div>

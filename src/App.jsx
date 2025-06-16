@@ -8,6 +8,7 @@ function App() {
     <div>
       <BannerSection />
       <LettersSection />
+      <FooterSection />
     </div>
   )
 }

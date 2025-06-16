@@ -1,6 +1,6 @@
 function FooterSection() {
     return (
-        <div className="max-w-4xl mx-auto text-center py-6 px-4">
+        <div className="w-full mx-auto text-center py-6 px-4 bg-gray-100">
             <p className="text-sm md:text-base">
                 © 6/16/2025 Jadon & Wedding. All rights reserved.
             </p>
